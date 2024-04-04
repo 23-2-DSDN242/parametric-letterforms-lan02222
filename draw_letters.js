@@ -16,21 +16,29 @@ const strokeColor  = "#0a2d27";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
-  // color/stroke setup
-  stroke(strokeColor);
-  strokeWeight(4);
-
-  // determine parameters for second circle
   let size2 = letterData["size"];
-  let pos2x = 50  + letterData["offsetx"];
-  let pos2y = 150 + letterData["offsety"];
+  let lightGreenX = 0 + letterData["offsetx"];
+  let lightGreenY = 0 + letterData["offsety"];
+  let colorVariablility = letterData["lerpColorAmt"]
+  let lineChange = letterData["lineHeight"]
+
+  let myGreen = color("#30dfc4")
+  let myPurple = color("#9b3fbf")
+
+  let fillSecondary = lerpColor(myGreen,myPurple,colorVariablility)
+
+  
 
   // draw two circles
   fill(darkGreen);
-  ellipse(50, 150, 75, 75);
-  fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
+  ellipse(0, 0, 50, 50);
+
+  fill(fillSecondary);
+  ellipse(lightGreenX, lightGreenY, size2, size2);
+  
+  line(0-150/2,0,0-150/2,0-lineChange)
 }
+
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
