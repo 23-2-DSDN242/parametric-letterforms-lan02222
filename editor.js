@@ -6,8 +6,10 @@
  */
 const sliderInfo = [
   ["size",       0, 100],
-  ["offsetx",  -30,  30],
-  ["offsety", -100, 100]
+  ["offsetx",  -10,  80],
+  ["offsety", 0, 200],
+  ["lerpColorAmt", 0, 1],
+  
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
