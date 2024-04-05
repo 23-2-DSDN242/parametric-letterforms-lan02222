@@ -14,26 +14,29 @@ const canvasHeight = 500;
 
 const letterA = {
   "size": 90,
-  "offsetx": 0,
-  "offsety": 35,
+  "offsetx": -20,
+  "offsety": -100,
   "lerpColorAmt": 1,
-  "lineHeight": 70
+  "lineHeight": 50,
+  "edges": 20
 }
 
 const letterB = {
-  "size": 150,
-  "offsetx": 0,
-  "offsety": -145,
+  "size": 50,
+  "offsetx": -50,
+  "offsety": -60,
   "lerpColorAmt": 0,
-  "lineHeight": 220
+  "lineHeight": 80,
+  "edges": 30
 }
 
 const letterC = {
   "size": 100,
-  "offsetx": 30,
-  "offsety": 0,
+  "offsetx": -30,
+  "offsety": -30,
   "lerpColorAmt": 0,
-  "lineHeight": 0
+  "lineHeight": 0,
+  "edges": 50
 }
 
 const backgroundColor  = "#acf2e7";
@@ -78,6 +81,7 @@ function drawLetter(posx, posy, letterData) {
   let lightGreenY = posy + letterData["offsety"];
   let colorVariablility = letterData["lerpColorAmt"]
   let lineChange = letterData["lineHeight"]
+  let edges = letterData["edges"]
 
   let myGreen = color("#30dfc4")
   let myPurple = color("#9b3fbf")
@@ -88,12 +92,16 @@ function drawLetter(posx, posy, letterData) {
 
   // draw two circles
   fill(darkGreen);
-  ellipse(posx, posy, 150, 150);
+  // ellipse(posx, posy, 150, 150);
+  square(posx, posy, 70, edges+10);
 
   fill(fillSecondary);
-  ellipse(lightGreenX, lightGreenY, size2, size2);
-  
-  line(posx-150/2,posy,posx-150/2,posy-lineChange)
+  // ellipse(lightGreenX, lightGreenY, size2, size2);
+  square(lightGreenX, lightGreenY, size2, edges);
+
+//   line(posx-150/2,posy,posx-150/2,posy-lineChange)
+  square(posx-150/2, posy, lineChange, edges+20);
+
 }
 
 function keyTyped() {
