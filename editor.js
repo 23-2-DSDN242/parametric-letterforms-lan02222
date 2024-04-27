@@ -5,11 +5,18 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["size",       0, 100],
-  ["offsetx",  -10,  80],
-  ["offsety", 0, 200],
+  ["wsize", 0, 100],
+  ["hsize", 0, 100],
+  ["offsetx1", 0,  100], //-10,  80
+  ["offsety1", 0, 100],//-100, 200
+  ["offsetx2", 0,  100],
+  ["offsety2", 0,  100],
+  ["offsetx3", 0,  100],
+  ["offsety3", 0,  100],
+  ["offsetx4", 0,  100],
+  ["offsety4", 0,  100],
   ["lerpColorAmt", 0, 1],
-  
+  ["roangle1", 0, 360],
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
