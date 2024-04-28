@@ -1,12 +1,12 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#acf2e7";
+var systemBackgroundColor = "#D7D7D7";
 var systemLineColor = "#000090";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
 const darkGreen  = "#26b29d";
-const lightGreen  = "#30dfc4";
-const strokeColor  = "#0a2d27";
+const White  = "#FFFFFF";
+const strokeColor  = "#000000";
 
 /*
  * Draw the letter given the letterData
@@ -26,7 +26,14 @@ function drawLetter(letterData) {
   let y3 = 0 + letterData["offsety3"];
   let x4 = 0 + letterData["offsetx4"];
   let y4 = 0 + letterData["offsety4"];
-  let roangle1 = 0 + letterData["roangle1"];
+  // let roangle1 = 0 + letterData["roangle1"];
+  let rectX = 0 + letterData["offsetRECTX"];
+  let rectY = 0 + letterData["offsetRECTY"];
+  let colorVariablility = letterData["lerpColorAmt"]
+  let myWhite = color("#FFFFFF")
+  let myBlack = color("#000000")
+  let fillRect = lerpColor(myWhite,myBlack,colorVariablility)
+
   // let colorVariablility = letterData["lerpColorAmt"]
   // let lineChange = letterData["lineHeight"]
 
@@ -41,15 +48,20 @@ function drawLetter(letterData) {
   // angleMode(DEGREES);
   // rectMode(CENTER);
   
-  fill(darkGreen)
+
+  
+  fill(fillRect);
+  strokeWeight(2.5);
   // push()
   // translate(lightGreenX, lightGreenY)
   // rotate(roangle1);
-  rect(30, 20, rectw, recth); 
+  
+  rect(rectX, rectY, rectw, recth); //30,20
   
   
-  strokeWeight(4);
+  strokeWeight(15);
   strokeCap(PROJECT);
+  stroke(strokeColor);
   noFill();
   
   beginShape();
@@ -60,7 +72,7 @@ function drawLetter(letterData) {
 
   endShape();
 
-
+ 
   
 
   // draw two circles
