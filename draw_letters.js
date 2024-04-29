@@ -1,5 +1,5 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#D7D7D7";
+var systemBackgroundColor = "#FFFFFF"; //#D7D7D7
 var systemLineColor = "#000090";
 var systemBoxColor = "#C73869";
 
@@ -29,11 +29,28 @@ function drawLetter(letterData) {
   // let roangle1 = 0 + letterData["roangle1"];
   let rectX = 0 + letterData["offsetRECTX"];
   let rectY = 0 + letterData["offsetRECTY"];
-  let colorVariablility = letterData["lerpColorAmt"]
-  let myWhite = color("#FFFFFF")
-  let myBlack = color("#000000")
-  let fillRect = lerpColor(myWhite,myBlack,colorVariablility)
+  // let myWhite = color("#FFFFFF")
+  // let myBlack = color("#000000")  
+  // let colorVariablility = letterData["lerpColorAmt"];
+  // let fillRect = lerpColor(myWhite,myBlack,colorVariablility)
+  let lightgreen = color("#d7e120") 
+  let xc1 = letterData["offsetxc1"];
+  let yc1 = letterData["offsetyc1"];
+  let xc2 = letterData["offsetxc2"];
+  let yc2 = letterData["offsetyc2"];
+  let xc3 = letterData["offsetxc3"];
+  let yc3 = letterData["offsetyc3"];
+  let xc4 = letterData["offsetxc4"];
+  let yc4 = letterData["offsetyc4"];
+  let xl1 = letterData["offsetxl1"];
+  let yl1 = letterData["offsetyl1"];
+  let xl2 = letterData["offsetxl2"];
+  let yl2 = letterData["offsetyl2"];
+  let squX = 0 + letterData["offsetSQUX"];
+  let squY = 0 + letterData["offsetSQUY"];
 
+
+  
   // let colorVariablility = letterData["lerpColorAmt"]
   // let lineChange = letterData["lineHeight"]
 
@@ -50,11 +67,10 @@ function drawLetter(letterData) {
   
 
   
-  fill(fillRect);
-  strokeWeight(2.5);
-  // push()
-  // translate(lightGreenX, lightGreenY)
-  // rotate(roangle1);
+  fill(lightgreen);//fillRect
+  noStroke();
+  //strokeWeight(2.5);
+
   
   rect(rectX, rectY, rectw, recth); //30,20
   
@@ -72,7 +88,28 @@ function drawLetter(letterData) {
 
   endShape();
 
- 
+  // draw decoration - outer contour
+  stroke(lightgreen);
+  strokeWeight(5);
+  strokeCap(PROJECT);
+  noFill();
+  
+  beginShape();
+  vertex(xc1,yc1); //30, 20
+  vertex(xc2, yc2);
+  vertex(xc3, yc3);
+  vertex(xc4, yc4);
+
+  endShape();
+  
+  // draw decoration -  draw line
+  stroke(strokeColor);
+  line(xl1, yl1, xl2, yl2);
+
+  // draw decoration -  draw square
+  fill(strokeColor),
+  square(squX, squY, 2);
+
   
 
   // draw two circles
@@ -88,9 +125,21 @@ function drawLetter(letterData) {
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
-  new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
-  new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
+  new_letter["wsize"]    = map(percent, 0, 100, oldObj["wsize"], newObj["wsize"]);
+  new_letter["hsize"] = map(percent, 0, 100, oldObj["hsize"], newObj["hsize"]);
+  new_letter["offsetx1"] = map(percent, 0, 100, oldObj["offsetx1"], newObj["offsetx1"]);
+  new_letter["offsety1"] = map(percent, 0, 100, oldObj["offsety1"], newObj["offsety1"]);
+  new_letter["offsetx2"] = map(percent, 0, 100, oldObj["offsetx2"], newObj["offsetx2"]);
+  new_letter["offsety2"] = map(percent, 0, 100, oldObj["offsety2"], newObj["offsety2"]);
+  new_letter["offsetx3"] = map(percent, 0, 100, oldObj["offsetx3"], newObj["offsetx3"]);
+  new_letter["offsety3"] = map(percent, 0, 100, oldObj["offsety3"], newObj["offsety3"]);
+  new_letter["offsetx4"] = map(percent, 0, 100, oldObj["offsetx4"], newObj["offsetx4"]);
+  new_letter["offsety4"] = map(percent, 0, 100, oldObj["offsety4"], newObj["offsety4"]);
+  new_letter["offsetRECTX"] = map(percent, 0, 100, oldObj["offsetRECTX"], newObj["offsetRECTX"]);
+  new_letter["offsetRECTY"] = map(percent, 0, 100, oldObj["offsetRECTY"], newObj["offsetRECTY"]);
+  new_letter["lerpColorAmt"] = map(percent, 0, 100, oldObj["lerpColorAmt"], newObj["lerpColorAmt"]);
+  
+
   return new_letter;
 }
 
