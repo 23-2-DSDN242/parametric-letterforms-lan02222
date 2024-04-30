@@ -42,10 +42,8 @@ function drawLetter(letterData) {
   let yc3 = letterData["offsetyc3"];
   let xc4 = letterData["offsetxc4"];
   let yc4 = letterData["offsetyc4"];
+  let rangle;  
 
-  let tw1 = letterData["topw1"];
-  let ty1 = letterData["topy1"];
-  
   // let colorVariablility = letterData["lerpColorAmt"]
   // let lineChange = letterData["lineHeight"]
 
@@ -62,20 +60,23 @@ function drawLetter(letterData) {
   
 
   
-  strokeWeight(15);
-  strokeCap(PROJECT);
-  stroke(strokeColor);
-  noFill();
+
   
-  beginShape();
-  vertex(x1, y1); //30, 20
-  vertex(x2, y2);
-  vertex(x3, y3);
-  vertex(x4, y4);
 
-  endShape();
 
-  // draw decoration - outer contour
+  // strokeWeight(15);
+  // strokeCap(PROJECT);
+  // stroke(darkGreen);
+  // noFill();
+  // beginShape();
+  // vertex(x1, y1); //30, 20
+  // vertex(x2, y2);
+  // vertex(x3, y3);
+  // vertex(x4, y4);
+
+  // endShape();
+
+  // // draw decoration - outer contour
   // stroke(darkGreen);
   // strokeWeight(5);
   // strokeCap(PROJECT);
@@ -89,30 +90,49 @@ function drawLetter(letterData) {
 
   // endShape();
   
-  // draw decoration -  draw line
-  // stroke(strokeColor);
-  // line(xl1, yl1, xl2, yl2);
 
-  // draw decoration -  draw square
-  // fill(strokeColor),
-  // square(squX, squY, 2);
+  // if (wsize hsize) {
+  //   noStroke();
+  //   noFill();
+  //   rotate(QUARTER_PI);
+  // } else {
+  //   stroke(255);
+  //   strokeWeight(cirStroke);
+  // }
+  // //----------------
 
-  //----------------
-  
+
   fill(lightgreen);//fillRect
   noStroke();
-  drawTarget(rectX, rectY, rectw, recth)
-  
-  
+  rect(rectX, rectY, rectw, recth);
 
-  function drawTarget(x,y,w,h){
-  rect(x,y,w,h);
-  fill(strokeColor),
 
+  
+  if (rectw < 30 ) {
+    rangle = 90;  
+  } else {
+    rangle = 0;
+  }
+
+
+
+
+  angleMode(DEGREES);
+  push()
+  translate(rectX+9, rectY)
+  rotate(rangle);
+    drawTarget(0, 0);
+  pop()
+
+  function drawTarget(x,y){
   strokeWeight(5);
   stroke(strokeColor);
+  noFill();
+
+
   line(x+19,y+6,x+20,y+6);    
   line(x-2,y+6,x+10,y+6);  
+
 
 
   // stroke(lightgreen);
@@ -145,6 +165,46 @@ function drawLetter(letterData) {
   // rect(15,50,15,105); //15,50,15,105
   // rect(84,50,15,105); //84,50,15,105
   // rect(15,140,50,15); //15,140,50,15
+
+
+
+  
+
+
+  drawTarget1(x1, y1, x2, y2, x3, y3, x4, y4,)
+  
+  function drawTarget1(tx1,ty1,tx2,ty2,tx3,ty3,tx4,ty4){
+    stroke(strokeColor);
+    strokeWeight(22);
+    strokeCap(PROJECT);
+    noFill();
+    
+    beginShape();
+    vertex(tx1, ty1); //30, 20
+    vertex(tx2, ty2);
+    vertex(tx3, ty3);
+    vertex(tx4, ty4);
+  
+    endShape();
+
+
+    stroke(lightgreen);
+    strokeWeight(6);
+    strokeCap(PROJECT);
+    noFill();
+    
+    beginShape();
+    vertex(tx1-3.5, ty1-19); //30, 20
+    vertex(tx2-3.5, ty2-19);
+    vertex(tx3-3.5, ty3-19);
+    vertex(tx4-3.5, ty4-19);
+  
+    endShape();
+
+  }
+
+ 
+
 
   }  
 
