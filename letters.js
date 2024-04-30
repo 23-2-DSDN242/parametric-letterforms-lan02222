@@ -13,20 +13,7 @@ const alphabet = {
     "lerpColorAmt": 0,
     "offsetRECTX": 41,
     "offsetRECTY": 80,
-    "offsetxc1": 80,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 39,
-    "offsetyl1": 86,
-    "offsetxl2": 52,
-    "offsetyl2": 86,
-    "offsetSQUX": 39,
-    "offsetSQUY": 71
+
 
   },
   "A": {
@@ -42,16 +29,11 @@ const alphabet = {
     "offsety4": 150,
     "offsetRECTX": 41,
     "offsetRECTY": 80,
-    "offsetxc1": 80,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    // "topw1" :75,
-    // "topy1" :45
+
+
+
+
+
   },
   "B": {
     "wsize": 32,
@@ -67,20 +49,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 15,
     "offsetRECTY": 90,
-    "offsetxc1": 15,
-    "offsetyc1": 33,
-    "offsetxc2": 95,
-    "offsetyc2": 33,
-    "offsetxc3": 95,
-    "offsetyc3": 155,
-    "offsetxc4": 95,
-    "offsetyc4": 155,
-    "offsetxl1": 39,
-    "offsetyl1": 98,
-    "offsetxl2": 52,
-    "offsetyl2": 98,
-    "offsetSQUX": 26,
-    "offsetSQUY": 97
+
 
 
   },
@@ -98,24 +67,11 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 54,
     "offsetRECTY": 140,
-    "offsetxc1": 87,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 45,//13
-    "offsetyl1": 150,
-    "offsetxl2": 58,
-    "offsetyl2": 150,
-    "offsetSQUX": 70,
-    "offsetSQUY": 149
+
   },
   "D": {
     "wsize": 18,
-    "hsize": 63,
+    "hsize": 50,
     "offsetx1": 20,
     "offsety1": 50,
     "offsetx2": 78,
@@ -127,20 +83,7 @@ const alphabet = {
     "lerpColorAmt": 0,
     "offsetRECTX": 20,
     "offsetRECTY": 70,
-    "offsetxc1": 15,
-    "offsetyc1": 33,
-    "offsetxc2": 95,
-    "offsetyc2": 33,
-    "offsetxc3": 95,
-    "offsetyc3": 155,
-    "offsetxc4": 95,
-    "offsetyc4": 155,
-    "offsetxl1": 27,
-    "offsetyl1": 105,
-    "offsetxl2": 27,
-    "offsetyl2": 135,
-    "offsetSQUX": 25,
-    "offsetSQUY": 90
+
   },
   "E": {
     "wsize": 35,
@@ -156,20 +99,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 53,
     "offsetRECTY": 90,
-    "offsetxc1": 87,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 45,//13
-    "offsetyl1": 101,
-    "offsetxl2": 58,
-    "offsetyl2": 101,
-    "offsetSQUX": 70,
-    "offsetSQUY": 101
+
     
   },
   "F": {
@@ -202,8 +132,8 @@ const alphabet = {
     "offsetSQUY": 101
   },
   "G": {
-    "wsize": 45,
-    "hsize": 18,
+    "wsize": 20,
+    "hsize": 35,
     "offsetx1": 83,
     "offsety1": 50,
     "offsetx2": 23,
@@ -213,51 +143,25 @@ const alphabet = {
     "offsetx4": 83,
     "offsety4": 150,
     "lerpColorAmt": 0,
-    "offsetRECTX": 46,
-    "offsetRECTY": 110,
-    "offsetxc1": 87,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 76,//13
-    "offsetyl1": 116,
-    "offsetxl2": 76,
-    "offsetyl2": 136,
-    "offsetSQUX": 58,
-    "offsetSQUY": 117
+    "offsetRECTX": 60,
+    "offsetRECTY": 85,
+
   },
   "H": {
     "wsize": 18,
-    "hsize": 44,
-    "offsetx1": 78,
+    "hsize": 40,
+    "offsetx1": 90,
     "offsety1": 150,
-    "offsetx2": 78,
+    "offsetx2": 90,//78
     "offsety2": 100,
-    "offsetx3": 10,
+    "offsetx3": 12,
     "offsety3": 100,
-    "offsetx4": 10,
+    "offsetx4": 12,
     "offsety4": 150,
     "lerpColorAmt": 1,
     "offsetRECTX": 4,
-    "offsetRECTY": 42,
-    "offsetxc1": 40,
-    "offsetyc1": 83,
-    "offsetxc2": 95,
-    "offsetyc2": 83,
-    "offsetxc3": 95,
-    "offsetyc3": 155,
-    "offsetxc4": 95,
-    "offsetyc4": 155,
-    "offsetxl1": 10,
-    "offsetyl1": 55,
-    "offsetxl2": 10,
-    "offsetyl2": 75,
-    "offsetSQUX": 10,
-    "offsetSQUY": 33
+    "offsetRECTY": 32,
+
   },
   "I": {
     "wsize": 18,
@@ -272,21 +176,8 @@ const alphabet = {
     "offsety4": 80,
     "lerpColorAmt": 1,
     "offsetRECTX": 42,
-    "offsetRECTY": 40,
-    "offsetxc1": 33,
-    "offsetyc1": 155,
-    "offsetxc2": 33,
-    "offsetyc2": 75,
-    "offsetxc3": 33,
-    "offsetyc3": 75,
-    "offsetxc4": 33,
-    "offsetyc4": 75,
-    "offsetxl1": 48,
-    "offsetyl1": 55,
-    "offsetxl2": 48,
-    "offsetyl2": 65,
-    "offsetSQUX": 48,
-    "offsetSQUY": 33
+    "offsetRECTY": 30,
+
   },
   "J": {
     "wsize": 18,
@@ -302,20 +193,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 51,
     "offsetRECTY": 40,
-    "offsetxc1": 30,
-    "offsetyc1": 113,
-    "offsetxc2": 5,
-    "offsetyc2": 113,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 57,
-    "offsetyl1": 55,
-    "offsetxl2": 57,
-    "offsetyl2": 65,
-    "offsetSQUX": 57,
-    "offsetSQUY": 33
+
 
   },
   "K": {
@@ -332,20 +210,7 @@ const alphabet = {
     "lerpColorAmt": 0,
     "offsetRECTX": 53,
     "offsetRECTY": 80,
-    "offsetxc1": 30,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 43,
-    "offsetyl1": 90,
-    "offsetxl2": 56,
-    "offsetyl2": 90,
-    "offsetSQUX": 70,
-    "offsetSQUY": 88
+
   },
   "L": {
     "wsize": 35,
@@ -361,20 +226,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 50,
     "offsetRECTY": 140,
-    "offsetxc1": 30,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 43,
-    "offsetyl1": 149,
-    "offsetxl2": 56,
-    "offsetyl2": 149,
-    "offsetSQUX": 70,
-    "offsetSQUY": 148
+
   },
   "M": {
     "wsize": 18,
@@ -390,20 +242,7 @@ const alphabet = {
     "lerpColorAmt": 0,
     "offsetRECTX": 48,
     "offsetRECTY": 85,
-    "offsetxc1": 80,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 55,
-    "offsetyl1": 75,
-    "offsetxl2": 55,
-    "offsetyl2": 105,
-    "offsetSQUX": 55,
-    "offsetSQUY": 120
+
   },
   "N": {
     "wsize": 18,
@@ -419,20 +258,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 80,
     "offsetRECTY": 122,
-    "offsetxc1": 80,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 90,
-    "offsetyl1": 118,
-    "offsetxl2": 90,
-    "offsetyl2": 138,
-    "offsetSQUX": 90,
-    "offsetSQUY": 148
+
   },
   "O": {
     "wsize": 35,
@@ -448,20 +274,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 39,
     "offsetRECTY": 42,
-    "offsetxc1": 30,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 39,
-    "offsetyl1": 50,//9
-    "offsetxl2": 52,
-    "offsetyl2": 50,
-    "offsetSQUX": 39,
-    "offsetSQUY": 33
+
   },
   "P": {
     "wsize": 18,
@@ -477,20 +290,7 @@ const alphabet = {
     "lerpColorAmt": 1,
     "offsetRECTX": 10,
     "offsetRECTY": 116,
-    "offsetxc1": 15,
-    "offsetyc1": 33,
-    "offsetxc2": 95,
-    "offsetyc2": 33,
-    "offsetxc3": 95,
-    "offsetyc3": 95,
-    "offsetxc4": 95,
-    "offsetyc4": 95,
-    "offsetxl1": 17,
-    "offsetyl1": 109,
-    "offsetxl2": 17,
-    "offsetyl2": 129,
-    "offsetSQUX": 16,
-    "offsetSQUY": 143
+
     
   },
   "Q": {
@@ -507,20 +307,7 @@ const alphabet = {
     "lerpColorAmt": 0,
     "offsetRECTX": 55,
     "offsetRECTY": 140,
-    "offsetxc1": 80,
-    "offsetyc1": 33,
-    "offsetxc2": 5,
-    "offsetyc2": 33,
-    "offsetxc3": 5,
-    "offsetyc3": 155,
-    "offsetxc4": 5,
-    "offsetyc4": 155,
-    "offsetxl1": 50,
-    "offsetyl1": 147,
-    "offsetxl2": 76,
-    "offsetyl2": 147,
-    "offsetSQUX": 50,
-    "offsetSQUY": 128
+
   },
   "R": {
     "wsize": 18,
@@ -718,7 +505,7 @@ const alphabet = {
     "offsetRECTY": 90
   },
   "4": {
-    "wsize": 18,
+  "wsize": 18,
   "hsize": 135,
   "offsetx1": 10,
   "offsety1": 42,
@@ -748,8 +535,8 @@ const alphabet = {
     "offsetRECTY": 40
   },
   "6": {
-    "wsize": 40,
-    "hsize": 60,
+    "wsize": 29,
+    "hsize": 50,
     "offsetx1": 70,
     "offsety1": 40,
     "offsetx2": 10,
@@ -759,8 +546,8 @@ const alphabet = {
     "offsetx4": 70,
     "offsety4": 165,
     "lerpColorAmt": 0,
-    "offsetRECTX": 30,
-    "offsetRECTY": 90
+    "offsetRECTX": 39,
+    "offsetRECTY": 89
   },
   "7": {
     "wsize": 18,
@@ -778,7 +565,7 @@ const alphabet = {
     "offsetRECTY": 60
   },
   "8": {
-    "wsize": 70,
+    "wsize": 29,
     "hsize": 50,
     "offsetx1": 70,
     "offsety1": 40,
@@ -789,7 +576,7 @@ const alphabet = {
     "offsetx4": 70,
     "offsety4": 100,
     "lerpColorAmt": 1,
-    "offsetRECTX": 5,
+    "offsetRECTX": 20,
     "offsetRECTY": 120
   },
   "9": {
