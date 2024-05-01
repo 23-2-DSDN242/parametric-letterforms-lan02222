@@ -16,8 +16,8 @@ const sliderInfo = [
   ["offsetx4", 0,  200],
   ["offsety4", 0,  200],
   ["lerpColorAmt", 0, 1],
-  ["offsetRECTX", 0, 100],
-  ["offsetRECTY", 0, 100],
+  ["offsetRECTX", 0, 200],
+  ["offsetRECTY", 0, 200],
 
 ];
 
