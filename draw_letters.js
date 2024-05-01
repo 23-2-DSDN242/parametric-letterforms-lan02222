@@ -34,14 +34,14 @@ function drawLetter(letterData) {
   // let colorVariablility = letterData["lerpColorAmt"];
   // let fillRect = lerpColor(myWhite,myBlack,colorVariablility)
   let lightgreen = color("#d7e120") 
-  let xc1 = letterData["offsetxc1"];
-  let yc1 = letterData["offsetyc1"];
-  let xc2 = letterData["offsetxc2"];
-  let yc2 = letterData["offsetyc2"];
-  let xc3 = letterData["offsetxc3"];
-  let yc3 = letterData["offsetyc3"];
-  let xc4 = letterData["offsetxc4"];
-  let yc4 = letterData["offsetyc4"];
+  // let xc1 = letterData["offsetxc1"];
+  // let yc1 = letterData["offsetyc1"];
+  // let xc2 = letterData["offsetxc2"];
+  // let yc2 = letterData["offsetyc2"];
+  // let xc3 = letterData["offsetxc3"];
+  // let yc3 = letterData["offsetyc3"];
+  // let xc4 = letterData["offsetxc4"];
+  // let yc4 = letterData["offsetyc4"];
   let rangle;  
 
   // let colorVariablility = letterData["lerpColorAmt"]
@@ -126,6 +126,7 @@ function drawLetter(letterData) {
 
   function drawTarget(x,y){
   strokeWeight(5);
+  strokeCap(PROJECT);
   stroke(strokeColor);
   noFill();
 
@@ -223,19 +224,88 @@ function drawLetter(letterData) {
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["wsize"]    = map(percent, 0, 100, oldObj["wsize"], newObj["wsize"]);
-  new_letter["hsize"] = map(percent, 0, 100, oldObj["hsize"], newObj["hsize"]);
-  new_letter["offsetx1"] = map(percent, 0, 100, oldObj["offsetx1"], newObj["offsetx1"]);
-  new_letter["offsety1"] = map(percent, 0, 100, oldObj["offsety1"], newObj["offsety1"]);
-  new_letter["offsetx2"] = map(percent, 0, 100, oldObj["offsetx2"], newObj["offsetx2"]);
-  new_letter["offsety2"] = map(percent, 0, 100, oldObj["offsety2"], newObj["offsety2"]);
-  new_letter["offsetx3"] = map(percent, 0, 100, oldObj["offsetx3"], newObj["offsetx3"]);
-  new_letter["offsety3"] = map(percent, 0, 100, oldObj["offsety3"], newObj["offsety3"]);
-  new_letter["offsetx4"] = map(percent, 0, 100, oldObj["offsetx4"], newObj["offsetx4"]);
-  new_letter["offsety4"] = map(percent, 0, 100, oldObj["offsety4"], newObj["offsety4"]);
-  new_letter["offsetRECTX"] = map(percent, 0, 100, oldObj["offsetRECTX"], newObj["offsetRECTX"]);
-  new_letter["offsetRECTY"] = map(percent, 0, 100, oldObj["offsetRECTY"], newObj["offsetRECTY"]);
-  new_letter["lerpColorAmt"] = map(percent, 0, 100, oldObj["lerpColorAmt"], newObj["lerpColorAmt"]);
+
+  if (percent < 50 ) {
+    new_letter["hsize"] = map(percent, 0, 50, oldObj["hsize"], 30);
+  } else {
+    new_letter["hsize"] = map(percent, 50, 100, 30, newObj["hsize"]);
+  }
+
+  new_letter["wsize"]    = map(percent, 0, 100, oldObj["wsize"], newObj["wsize"]); //if change this size, it will change the small black lines rotate
+  // new_letter["hsize"] = map(percent, 0, 100, oldObj["hsize"], newObj["hsize"]);
+
+  if (percent < 50 ) {
+    new_letter["offsetx1"] = map(percent, 0, 50, oldObj["offsetx1"], 10);
+  } else {
+    new_letter["offsetx1"] = map(percent, 50, 100, 50, newObj["offsetx1"]);
+  }
+  // new_letter["offsetx1"] = map(percent, 0, 100, oldObj["offsetx1"], newObj["offsetx1"]);
+
+  if (percent < 50 ) {
+    new_letter["offsety1"] = map(percent, 0, 50, oldObj["offsety1"], 20);
+  } else {
+    new_letter["offsety1"] = map(percent, 50, 100, 30, newObj["offsety1"]);
+  }
+
+
+
+  if (percent < 50 ) {
+    new_letter["offsetx2"] = map(percent, 0, 50, oldObj["offsetx2"], 10);
+  } else {
+    new_letter["offsetx2"] = map(percent, 50, 100, 50, newObj["offsetx2"]);
+  }  
+
+
+  if (percent < 50 ) {
+    new_letter["offsety2"] = map(percent, 0, 50, oldObj["offsety2"], 20);
+  } else {
+    new_letter["offsety2"] = map(percent, 50, 100, 30, newObj["offsety2"]);
+  }
+
+
+
+  if (percent < 50 ) {
+    new_letter["offsetx3"] = map(percent, 0, 50, oldObj["offsetx3"], 10);
+  } else {
+    new_letter["offsetx3"] = map(percent, 50, 100, 50, newObj["offsetx3"]);
+  }
+
+
+  if (percent < 50 ) {
+    new_letter["offsety3"] = map(percent, 0, 50, oldObj["offsety3"], 20);
+  } else {
+    new_letter["offsety3"] = map(percent, 50, 100, 30, newObj["offsety3"]);
+  }
+
+
+  if (percent < 50 ) {
+    new_letter["offsetx4"] = map(percent, 0, 50, oldObj["offsetx4"], 10);
+  } else {
+    new_letter["offsetx4"] = map(percent, 50, 100, 50, newObj["offsetx4"]);
+  }
+
+  if (percent < 50 ) {
+    new_letter["offsety4"] = map(percent, 0, 50, oldObj["offsety4"], 20);
+  } else {
+    new_letter["offsety4"] = map(percent, 50, 100, 30, newObj["offsety4"]);
+  }
+
+  if (percent < 50 ) {
+    new_letter["offsetRECTX"] = map(percent, 0, 50, oldObj["offsetRECTX"], 5);
+  } else {
+    new_letter["offsetRECTX"] = map(percent, 50, 100, 20, newObj["offsetRECTX"]);
+  }
+
+  if (percent < 50 ) {
+    new_letter["offsetRECTY"] = map(percent, 0, 50, oldObj["offsetRECTY"], 20);
+  } else {
+    new_letter["offsetRECTY"] = map(percent, 50, 100, 20, newObj["offsetRECTY"]);
+  }
+
+
+  // new_letter["offsetRECTX"] = map(percent, 0, 100, oldObj["offsetRECTX"], newObj["offsetRECTX"]);
+  // new_letter["offsetRECTY"] = map(percent, 0, 100, oldObj["offsetRECTY"], newObj["offsetRECTY"]);
+  // new_letter["lerpColorAmt"] = map(percent, 0, 100, oldObj["lerpColorAmt"], newObj["lerpColorAmt"]);
   
 
   return new_letter;
