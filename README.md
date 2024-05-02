@@ -2,7 +2,7 @@
 ## MDDN 242 2024 Assignment 2
 
 ### Table of contents
-- [SharpGlow:](#sharpglow)
+- [BoldGlow:](#boldglow)
   - [Author](#author)
   - [The parameters per letter:](#the-parameters-per-letter)
   - [Design Process](#design-process)
@@ -16,7 +16,7 @@
 
 
 
-# SharpGlow: 
+# BoldGlow: 
 
 My font consists of two parts: __the main body__ and __the second body__. __The main body__ Consists of a thick black line and a green rectangle. __The second body__ is composed of long green lines and thin black combined lines. The color and line weight of my font are fixed. Different __second body__ parts are controlled by different __main body__ parameters respectively. Through these values, you can control the position of the line and rectangle, the size of the rectangle, and the rotation angle of the thin line.
 
