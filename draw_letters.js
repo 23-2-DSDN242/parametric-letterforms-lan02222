@@ -15,6 +15,7 @@ const strokeColor  = "#000000";
  * following bounding box guideline:
  * from (0,0) to (100, 200)
  */
+
 function drawLetter(letterData) {
   let rectw = letterData["wsize"];
   let recth = letterData["hsize"];
@@ -26,79 +27,13 @@ function drawLetter(letterData) {
   let y3 = 0 + letterData["offsety3"];
   let x4 = 0 + letterData["offsetx4"];
   let y4 = 0 + letterData["offsety4"];
-  // let roangle1 = 0 + letterData["roangle1"];
   let rectX = 0 + letterData["offsetRECTX"];
   let rectY = 0 + letterData["offsetRECTY"];
-  // let myWhite = color("#FFFFFF")
-  // let myBlack = color("#000000")  
-  // let colorVariablility = letterData["lerpColorAmt"];
-  // let fillRect = lerpColor(myWhite,myBlack,colorVariablility)
   let lightgreen = color("#d7e120") 
-  // let xc1 = letterData["offsetxc1"];
-  // let yc1 = letterData["offsetyc1"];
-  // let xc2 = letterData["offsetxc2"];
-  // let yc2 = letterData["offsetyc2"];
-  // let xc3 = letterData["offsetxc3"];
-  // let yc3 = letterData["offsetyc3"];
-  // let xc4 = letterData["offsetxc4"];
-  // let yc4 = letterData["offsetyc4"];
   let rangle;  
 
-  // let colorVariablility = letterData["lerpColorAmt"]
-  // let lineChange = letterData["lineHeight"]
-
-  // let myGreen = color("#30dfc4")
-  // let myPurple = color("#9b3fbf")
-
-  // let fillSecondary = lerpColor(myGreen,myPurple,colorVariablility)
 
   
-  // draw a line and a rect
-
-  // angleMode(DEGREES);
-  // rectMode(CENTER);
-  
-
-  
-
-  
-
-
-  // strokeWeight(15);
-  // strokeCap(PROJECT);
-  // stroke(darkGreen);
-  // noFill();
-  // beginShape();
-  // vertex(x1, y1); //30, 20
-  // vertex(x2, y2);
-  // vertex(x3, y3);
-  // vertex(x4, y4);
-
-  // endShape();
-
-  // // draw decoration - outer contour
-  // stroke(darkGreen);
-  // strokeWeight(5);
-  // strokeCap(PROJECT);
-  // noFill();
-  
-  // beginShape();
-  // vertex(xc1,yc1); //30, 20
-  // vertex(xc2, yc2);
-  // vertex(xc3, yc3);
-  // vertex(xc4, yc4);
-
-  // endShape();
-  
-
-  // if (wsize hsize) {
-  //   noStroke();
-  //   noFill();
-  //   rotate(QUARTER_PI);
-  // } else {
-  //   stroke(255);
-  //   strokeWeight(cirStroke);
-  // }
   // //----------------
 
 
@@ -136,36 +71,9 @@ function drawLetter(letterData) {
 
 
 
-  // stroke(lightgreen);
-
-  // strokeWeight(5);
-  // strokeCap(PROJECT);
-  // noFill();
-  
-  // beginShape();
-  // vertex(xc1,yc1); //30, 20
-  // vertex(xc2, yc2);
-  // vertex(xc3, yc3);
-  // vertex(xc4, yc4);
-
-  // endShape();
 
   }
 
-  //test
-  // drawTarget1(18, ty1, tw1, 10);
-  
-  // function drawTarget1(x,y,w,h){
-  // fill(strokeColor);
-  // rect(x,y,w,h); //15,50,50,15
-
-  // strokeWeight(5);
-  // stroke(lightgreen);
-  // line(x,y-12,x+w-10,y-12);   
-
-  // rect(15,50,15,105); //15,50,15,105
-  // rect(84,50,15,105); //84,50,15,105
-  // rect(15,140,50,15); //15,140,50,15
 
 
 
@@ -211,14 +119,7 @@ function drawLetter(letterData) {
 
 
 
-  // draw two circles
-  // fill(darkGreen);
-  // ellipse(0, 0, 50, 50);
 
-  // fill(fillSecondary);
-  // ellipse(lightGreenX, lightGreenY, size2, size2);
-  
-  // line(0-150/2,0,0-150/2,0-lineChange)
 
 
 
