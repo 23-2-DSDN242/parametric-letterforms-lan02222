@@ -2,7 +2,7 @@
 ## MDDN 242 2024 Assignment 2
 
 ### Table of contents
-- [Font Name: SharpGlow](#font-name-sharpglow)
+- [SharpGlow:](#sharpglow)
   - [Author](#author)
   - [The parameters per letter:](#the-parameters-per-letter)
   - [Design Process](#design-process)
@@ -16,27 +16,27 @@
 
 
 
-# Font Name: SharpGlow
+# SharpGlow: 
 
-__The main body__. of my font consists of a line and a rectangle. __The auxiliary body part__. is divided into two groups, the first group is a long line, and the second group is a long line and a short line. Their color and line thickness are fixed. The auxiliary body part is controlled by the parameters of the main body. Through these values, the position and size of the body part can be controlled.
+My font consists of two parts: __the main body__ and __the second body__. __The main body__ Consists of a thick black line and a green rectangle. __The second body__ is composed of long green lines and thin black combined lines. The color and line weight of my font are fixed. Different __second body__ parts are controlled by different __main body__ parameters respectively. Through these values, you can control the position of the line and rectangle, the size of the rectangle, and the rotation angle of the thin line.
 
 ## Author
 Hi, I'm Lan.
 
 ## The parameters per letter:
-  * `wsize` : the width of the body rectangle
+  * `wsize` : the width of the a green rectangle of the main body
   
-  * `hsize` : the length of the body rectangle
-  * `offsetx1` : x1 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsety1` : y1 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsetx2` : x2 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsety2` : y2 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsetx3` : x3 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsety3` : y3 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsetx4` : x4 offset of the first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsety4` : y4 The first part of the line of the main body and the long section of one lines of the auxiliary body
-  * `offsetRECTX` : y offset of the rectangle of the main body and the two lines of the secondary body
-  * `offsetRECTY` : y offset of the rectangle of the main body and the two lines of the secondary body
+  * `hsize` : the length of the a green rectangle of the main body
+  * `offsetx1` : x1 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsety1` : y1 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsetx2` : x2 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsety2` : y2 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsetx3` : x3 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsety3` : y3 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsetx4` : x4 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsety4` : y4 offset of a thick black line of the main body and the long section of one long green line of the second body
+  * `offsetRECTX` : y offset of the rectangle of the main body and the thin black combined lines of the second body
+  * `offsetRECTY` : y offset of the rectangle of thin black combined lines of the second body
 
 
 ## Design Process
