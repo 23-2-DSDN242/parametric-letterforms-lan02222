@@ -10,7 +10,6 @@ const alphabet = {
     "offsety3": 80,
     "offsetx4": 50,
     "offsety4": 80,
-    "lerpColorAmt": 1,
     "offsetRECTX": 30,
     "offsetRECTY": 110
 
@@ -145,7 +144,6 @@ const alphabet = {
     "offsety3": 100,
     "offsetx4": 20,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 9,
     "offsetRECTY": 32
 
@@ -161,7 +159,6 @@ const alphabet = {
     "offsety3": 80,
     "offsetx4": 50,
     "offsety4": 80,
-    "lerpColorAmt": 1,
     "offsetRECTX": 42,
     "offsetRECTY": 30
 
@@ -177,7 +174,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 22,
     "offsety4": 130,
-    "lerpColorAmt": 1,
     "offsetRECTX": 51,
     "offsetRECTY": 30
 
@@ -194,7 +190,6 @@ const alphabet = {
     "offsety3": 98,
     "offsetx4": 80,
     "offsety4": 98,
-    "lerpColorAmt": 0,
     "offsetRECTX": 12,
     "offsetRECTY": 116
 
@@ -210,7 +205,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 23,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 50,
     "offsetRECTY": 140
 
@@ -226,7 +220,6 @@ const alphabet = {
     "offsety3": 50,
     "offsetx4": 20,
     "offsety4": 150,
-    "lerpColorAmt": 0,
     "offsetRECTX": 42,
     "offsetRECTY": 85
 
@@ -242,7 +235,6 @@ const alphabet = {
     "offsety3": 50,
     "offsetx4": 20,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 72,
     "offsetRECTY": 122
 
@@ -258,7 +250,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 80,
     "offsety4": 50,
-    "lerpColorAmt": 1,
     "offsetRECTX": 34,
     "offsetRECTY": 42
 
@@ -274,7 +265,6 @@ const alphabet = {
     "offsety3": 93,
     "offsetx4": 20,
     "offsety4": 93,
-    "lerpColorAmt": 1,
     "offsetRECTX": 9,
     "offsetRECTY": 116
 
@@ -291,7 +281,6 @@ const alphabet = {
     "offsety3": 50,
     "offsetx4": 20,
     "offsety4": 150,
-    "lerpColorAmt": 0,
     "offsetRECTX": 55,
     "offsetRECTY": 140
 
@@ -307,7 +296,6 @@ const alphabet = {
     "offsety3": 50,
     "offsetx4": 20,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 50,
     "offsetRECTY": 102
   },
@@ -322,7 +310,6 @@ const alphabet = {
     "offsety3": 100,
     "offsetx4": 80,
     "offsety4": 100,
-    "lerpColorAmt": 1,
     "offsetRECTX": 10,
     "offsetRECTY": 140
   },
@@ -337,7 +324,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 50,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 61,
     "offsetRECTY": 37
   },
@@ -352,7 +338,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 80,
     "offsety4": 110,
-    "lerpColorAmt": 1,
     "offsetRECTX": 73,
     "offsetRECTY": 35
   },
@@ -367,7 +352,6 @@ const alphabet = {
     "offsety3": 122,
     "offsetx4": 80,
     "offsety4": 50,
-    "lerpColorAmt": 1,
     "offsetRECTX": 33,
     "offsetRECTY": 140
   },
@@ -382,7 +366,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 80,
     "offsety4": 50,
-    "lerpColorAmt": 0,
     "offsetRECTX": 40,
     "offsetRECTY": 50
   },
@@ -397,7 +380,6 @@ const alphabet = {
     "offsety3": 100,
     "offsetx4": 80,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 40,
     "offsetRECTY": 35
   },
@@ -412,7 +394,6 @@ const alphabet = {
     "offsety3": 75,
     "offsetx4": 80,
     "offsety4": 50,
-    "lerpColorAmt": 0,
     "offsetRECTX": 40,
     "offsetRECTY": 100
   },
@@ -442,7 +423,6 @@ const alphabet = {
     "offsety3": 50,
     "offsetx4": 20,
     "offsety4": 130,
-    "lerpColorAmt": 1,
     "offsetRECTX": 9,
     "offsetRECTY": 150
   },
@@ -457,7 +437,6 @@ const alphabet = {
     "offsety3": 50,
     "offsetx4": 50,
     "offsety4": 50,
-    "lerpColorAmt": 1,
     "offsetRECTX": 41,
     "offsetRECTY": 140
   },
@@ -472,7 +451,6 @@ const alphabet = {
     "offsety3": 100,
     "offsetx4": 20,
     "offsety4": 100,
-    "lerpColorAmt": 1,
     "offsetRECTX": 10,
     "offsetRECTY": 140
   },
@@ -488,7 +466,6 @@ const alphabet = {
     "offsetx4": 20,
     "offsety4": 150,
     "lerpColorAmt": 0,
-    "offsetRECTX": 10,
     "offsetRECTY": 90
   },
   "4": {
@@ -502,7 +479,6 @@ const alphabet = {
   "offsety3": 102,
   "offsetx4": 80,
   "offsety4": 102,
-  "lerpColorAmt": 0,
   "offsetRECTX": 50,
   "offsetRECTY": 35
   },
@@ -517,7 +493,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 20,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 10,
     "offsetRECTY": 40
   },
@@ -532,7 +507,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 80,
     "offsety4": 110,
-    "lerpColorAmt": 0,
     "offsetRECTX": 39,
     "offsetRECTY": 85
   },
@@ -547,7 +521,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 80,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 10,
     "offsetRECTY": 40
   },
@@ -562,7 +535,6 @@ const alphabet = {
     "offsety3": 150,
     "offsetx4": 80,
     "offsety4": 150,
-    "lerpColorAmt": 1,
     "offsetRECTX": 32,
     "offsetRECTY": 80
   },
@@ -577,7 +549,6 @@ const alphabet = {
     "offsety3": 90,
     "offsetx4": 80,
     "offsety4": 90,
-    "lerpColorAmt": 0,
     "offsetRECTX": 60,
     "offsetRECTY": 60
   }
