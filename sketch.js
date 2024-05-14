@@ -13,21 +13,30 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 80,
-  "offsetx": 0,
-  "offsety": 35
+  "size": 90,
+  "offsetx": -20,
+  "offsety": -100,
+  "lerpColorAmt": 1,
+  "lineHeight": 50,
+  "edges": 20
 }
 
 const letterB = {
-  "size": 150,
-  "offsetx": 0,
-  "offsety": -145
+  "size": 50,
+  "offsetx": -50,
+  "offsety": -60,
+  "lerpColorAmt": 0,
+  "lineHeight": 80,
+  "edges": 30
 }
 
 const letterC = {
   "size": 100,
-  "offsetx": 30,
-  "offsety": 0
+  "offsetx": -30,
+  "offsety": -30,
+  "lerpColorAmt": 0,
+  "lineHeight": 0,
+  "edges": 50
 }
 
 const backgroundColor  = "#acf2e7";
@@ -35,6 +44,8 @@ const backgroundColor  = "#acf2e7";
 const darkGreen  = "#26b29d";
 const lightGreen  = "#30dfc4";
 const strokeColor  = "#0a2d27";
+
+const midPurple = "#9b3fbf";
 
 function setup () {
   // create the drawing canvas, save the canvas element
@@ -66,14 +77,31 @@ function draw () {
 function drawLetter(posx, posy, letterData) {
   // determine parameters for second circle
   let size2 = letterData["size"];
-  let pos2x = posx + letterData["offsetx"];
-  let pos2y = posy + letterData["offsety"];
+  let lightGreenX = posx + letterData["offsetx"];
+  let lightGreenY = posy + letterData["offsety"];
+  let colorVariablility = letterData["lerpColorAmt"]
+  let lineChange = letterData["lineHeight"]
+  let edges = letterData["edges"]
+
+  let myGreen = color("#30dfc4")
+  let myPurple = color("#9b3fbf")
+
+  let fillSecondary = lerpColor(myGreen,myPurple,colorVariablility)
+
+  
 
   // draw two circles
   fill(darkGreen);
-  ellipse(posx, posy, 150, 150);
-  fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
+  // ellipse(posx, posy, 150, 150);
+  square(posx, posy, 70, edges+10);
+
+  fill(fillSecondary);
+  // ellipse(lightGreenX, lightGreenY, size2, size2);
+  square(lightGreenX, lightGreenY, size2, edges);
+
+//   line(posx-150/2,posy,posx-150/2,posy-lineChange)
+  square(posx-150/2, posy, lineChange, edges+20);
+
 }
 
 function keyTyped() {
